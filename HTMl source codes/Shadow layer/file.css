@@ -1,0 +1,20 @@
+body
+{
+  background:royalblue;
+}
+.card1
+{
+  width:160px;
+  height:200px;
+  background:white;
+  margin:15px 550px;
+  border-radius:10px;
+  transition:box-shadow .25s ease-in;
+  text-align:center;
+  font-size:2em;
+  font-family:fantasy;
+}
+.card1:hover
+{
+ box-shadow:rgba(225,225,225,0.5)5px 3px,rgba(225,225,225,0.4)10px 6px,rgba(225,225,225,0.3)15px 9px,rgba(225,225,225,0.2)20px 12px;
+}
