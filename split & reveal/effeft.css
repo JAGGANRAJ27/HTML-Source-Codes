@@ -1,0 +1,89 @@
+body
+{
+    background:grey url("https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg") no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.photo
+{
+    width: 350px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 10% auto;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1.0);
+}
+.photo span
+{
+    height: 100% ;
+    background: url("https://media.istockphoto.com/photos/responsive-devices-on-home-desktop-showing-web-design-website-picture-id1224339524?k=20&m=1224339524&s=612x612&w=0&h=kEeIOkGRHxVAZJYDg2Dvk5tbeNTPo33Sdp0YhHuDu3k=") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    transition: 1s;
+}
+.photo span:nth-child(1)
+{
+    z-index: 10;
+    width: 25%;
+    transition-delay: 0s;
+}
+.photo span:nth-child(2)
+{
+    z-index: 9;
+    width: 50%;
+    transition-delay: 0.3s;
+}
+.photo span:nth-child(3)
+{
+    z-index: 8;
+    width: 75%;
+    transition-delay: 0.6s;
+}
+.photo span:nth-child(4)
+{
+    z-index: 7;
+    width: 100%;
+    transition-delay: 0.9s;
+}
+.photo:hover span
+{
+    transform: translateY(-100%);
+    transition: 1s;
+}
+.photo:hover span:nth-child(1)
+{
+    transition-delay: 0.9s;
+}
+.photo:hover span:nth-child(2)
+{
+    transition-delay: 0.6s;
+}
+.photo:hover span:nth-child(3)
+{
+    transition-delay: 0.3s;
+}
+.photo:hover span:nth-child(4)
+{
+    transition-delay: 0s;
+}
+.content
+{
+    color: whitesmoke;
+    text-align: center;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: 2s;
+}
+.photo:hover .content
+{
+    transform: translateY(0);
+}

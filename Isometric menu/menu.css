@@ -1,0 +1,130 @@
+body
+{
+    background: slateblue;
+    padding: 0;
+    margin: 0;
+}
+.container
+{
+    height: 350px;
+    width: 550px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.menu
+{
+    position: relative;
+    bottom: 35px;
+    right: 52px;
+}
+.left
+{
+    height: 100px;
+    width: 20px;
+    background: #dddddd;
+    transform: rotate(90deg) skewX(-30deg) scaleY(0.864);
+    position: relative;
+}
+.left,.right,.top
+{
+    transform-origin: 0 0 ;
+}
+.right	
+{
+    height: 20px;
+    width: 100px;
+    background: #c8c8c8;
+    transform: rotate(-30deg) skewX(-30deg) scaleY(0.864);
+    position: relative;
+    bottom: 100px;
+}
+.top
+{
+    height: 100px;
+    width: 100px;
+    background: white;
+    transform: rotate(210deg) skewX(-30deg) scaleY(0.864);
+    position: relative;
+    bottom: 120px;
+    color: darkorange;
+}
+a
+{
+    color: darkorange;
+}
+.shadow
+{
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    transform: rotate(210deg) skewX(-30deg) scaleY(0.864);
+    position: relative;
+    top: 30px;
+    right: 30px;
+}
+.menu>div
+{
+    height: 0;
+    width: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.item1
+{
+    position: relative;
+    top: 149.5px;
+    left: 413.5px;
+}
+.item2
+{
+    position: relative;
+    top: 199.5px;
+    left: 327.5px;
+}
+.item3{
+    position: relative;
+    top: 249px;
+    left: 241px;
+}
+.item4
+{
+    position: relative;
+    top: 300px;
+    left: 155px;
+}
+.fa
+{
+    font-size: 40px;
+}
+i{
+    transform: rotate(90deg);
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+.item:hover
+{
+    transform: translateY(-20px);
+}
+.item:hover .shadow
+{
+    background: rgba(155, 155, 155, 0.25);
+    box-shadow: 0 0 30px 50px rgba(255, 140, 0, 0.1);
+    transform: rotate(210deg) skew(-30deg) scaleY(0.864) translateY(20px);
+}
+.item:hover .top
+{
+    color: white;
+}
+.item:hover .right
+{
+    background: #fcae1e;
+}
+.item:hover .left
+{
+    background: #ec9706;
+}
