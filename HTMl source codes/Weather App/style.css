@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(75deg,black, purple);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+}
+
+.container h1 {
+    color: white;
+    letter-spacing: 8px;
+}
+
+.container.active .search {
+    display: none;
+}
+
+.search .input-container input {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.search .error-container .error-text {
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+}
+
+.error-text.error {
+    color: white;
+    background: rgba(255, 0, 0, 0.6);
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+.error-text.wait {
+    color: white;
+    padding: 10px 25px;
+    background: rgba(42, 43, 42, 0.418);
+    border-radius: 8px;
+}
+
+.container .current {
+    justify-content: space-between;
+}
+
+.date-container .time {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.date-container .time #am-pm {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.date-container .date {
+    font-size: 1.7rem;
+}
+
+.place {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    color: white;
+}
+
+.container.active .place {
+    display: flex;
+}
+
+.place .time-zone {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.place .country {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.current {
+    display: none;
+    color: white;
+}
+
+.container.active .current {
+    display: flex;
+}
+
+.current .others {
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: capitalize;
+    background-color: rgba(42, 43, 42, 0.418);
+    border-radius: 10px;
+}
+
+.current .others .weather-condition-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    margin: 15px;
+}
+
+.current .others .other-details {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.others .other-details .grid-left,
+.grid-right {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.others .other-details .grid-left .spaced-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.others .other-details .grid-right .spaced-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-details .grid-left .spaced-content div {
+    font-size: 1rem;
+}
+
+.other-details .grid-right .spaced-content div {
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 769px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .container .search {
+        margin-top: 15%;
+        padding: 15px 15px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search .input-container {
+        font-size: 1.2rem;
+        padding: 10px 0px;
+    }
+
+    .search .input-container input {
+        width: 70%;
+        padding: 20px 15px;
+    }
+
+    .search .error-container .error-text {
+        font-size: .9rem;
+    }
+
+    .place {
+        display: none;
+    }
+
+    .current {
+        display: none;
+    }
+
+    .container.active .current {
+        display: flex;
+    }
+
+    .current .others {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .current .others .weather-condition-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        font-size: 2rem;
+        margin: 15px;
+    }
+
+    .current .others .other-details {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        margin-left: 40px;
+    }
+
+    .others .other-details .grid-left,
+    .grid-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .others .other-details .grid-left .spaced-content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .others .other-details .grid-right .spaced-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .other-details .grid-left .spaced-content div {
+        margin: 0 50px;
+        font-size: 1.2rem;
+    }
+
+    .other-details .grid-right .spaced-content div {
+        margin: 0 50px;
+        font-size: 1.2rem;
+    }
+
+}
+
+.future-forecast {
+    margin-top: 20px;
+    background-color: rgba(42, 43, 42, 0.418);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.future-forecast .today {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.future-forecast .today .day {
+    padding: 5px 15px;
+    background-color: #3c3c44;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.future-forecast .today .temp {
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.future-forecast .weather-forecast {
+    display: flex;
+}
+
+.weather-forecast .weather-forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.weather-forecast .weather-forecast-item .day {
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.weather-forecast .weather-forecast-item .temp {
+    font-weight: 100;
+}
+
+@media only screen and (max-width:730px) {
+    .future-forecast {
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+}
+.box
+{
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 13px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    padding: 20px 0px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
