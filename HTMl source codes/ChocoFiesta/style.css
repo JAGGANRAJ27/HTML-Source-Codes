@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Open+Sans:wght@400;500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/pecita');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.row {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.image1 {
+    background: url("./assets/image/dark\ decance.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.image2 {
+    background: url("./assets/image/zesty\ orange.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.image3 {
+    background: url("./assets/image/minty\ marvel.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.image4 {
+    background: url("./assets/image/caramel\ dreamscape.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.image5 {
+    background: url("./assets/image/blackcurrent\ bliss.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.main-text-area>* {
+    padding-top: 50px;
+}
+
+.about-text {
+    font-size: 1.2em;
+}
+
+.button {
+    background-color: #fff;
+    color: #532121;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.right {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+}
+
+.rightside1 {
+    background-color: #8B5B56;
+}
+
+.rightside2 {
+    background-color: #FFB220;
+}
+
+.rightside3 {
+    background-color: #23A66C;
+}
+
+.rightside4 {
+    background-color: #D5A325;
+}
+
+.rightside5 {
+    background-color: #8424FF;
+}
+
+.brand-text {
+    font-family: 'Island Moments', cursive;
+    font-weight: 200;
+    font-size: 3em;
+}
+
+.sloganhead {
+    text-transform: capitalize;
+}
+
+.sub-head {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.foot {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.navigation {
+    margin-right: 50px;
+}
+
+.foot-text {
+    font-family: 'Pecita', sans-serif;
+    font-size: 4em;
+    opacity: 0.2;
+    margin-top: 50px;
+}
+
+#table {
+    margin-left: 15%;
+    min-height: 10vh;
+    width: 70%;
+}
+
+.tab1,
+.tab2,
+.tab3 {
+    padding-top: 8px;
+}
+
+.tab1 {
+    border-top: solid 1px #fff;
+    border-right: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+}
+
+.tab2 {
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+}
+
+.tab3 {
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    border-left: solid 1px #fff;
+}
