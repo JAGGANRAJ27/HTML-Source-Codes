@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Gain Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Stock Gain Calculator</h1>
+        <form id="stockForm">
+            <label for="pricePerShare">Price per Share (Rs):</label>
+            <input type="number" id="pricePerShare" required>
+            <label for="numberOfShares">Number of Shares:</label>
+            <input type="number" id="numberOfShares" required>
+            <label for="newPricePerShare">New Price per Share (Rs):</label>
+            <input type="number" id="newPricePerShare" required>
+            <button type="submit">Calculate Gain</button>
+        </form>
+        <div id="result"></div>
+        <div id="explanation"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
